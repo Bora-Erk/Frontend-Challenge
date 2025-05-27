@@ -1,0 +1,21 @@
+.skills-grid{
+    display: flex;
+}
+#js{
+    width: 70px;
+}
+#react{
+    width: 70px;
+}
+#redux{
+    width: 70px;
+}
+#node{
+    width: 70px;
+}
+#vs{
+    width: 70px;
+}
+#figma{
+    width: 50px;
+}
