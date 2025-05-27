@@ -4,14 +4,21 @@ import './Header.css';
 import '@fortawesome/fontawesome-free/css/all.min.css';
 
 
-const Header = () => {
+const Header = ({ onToggleTheme, currentTheme }) => {
   const { t, toggleLanguage, lang } = useLanguage();
   return (
     <header className="header">
       <div className="header-controls">
+      <button
+          className="theme-switch"
+          onClick={onToggleTheme}
+        >
+          {currentTheme === 'light' ? 'Dark Mode' : 'Light Mode'}
+        </button>
         <button className="lang-switch" onClick={toggleLanguage}>
           {t('switchLanguage')}
         </button>
+        
       </div>
       <div className="header-intro">
         <p>{t('greeting')}</p>        

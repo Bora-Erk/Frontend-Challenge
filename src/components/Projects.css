@@ -1,11 +1,11 @@
 .projects {
-    background: #d4f69b;
+    background: var(--secondary);
     padding: 4rem 2rem;
   }
   
   .projects h2 {
     font-size: 2.5rem;
-    color: #3f2ae1;
+    color: var(--primary);
     margin-bottom: 2rem;
     margin-left: 9rem;
   }
@@ -18,7 +18,7 @@
   }
   
   .project {
-    background: #fff;
+    background: var(--surface);
     border-radius: 1rem;
     overflow: hidden;
     box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
@@ -41,12 +41,12 @@
   .project-info h3 {
     margin: 0 0 1rem;
     font-size: 1.75rem;
-    color: #3f2ae1;
+    color: var(--primary);
   }
   
   .project-info p {
     margin: 0 0 1.5rem;
-    color: #333;
+    color: var(--text);
     line-height: 1.6;
   }
   
@@ -56,8 +56,8 @@
   
   .project-tags span {
     display: inline-block;
-    background: #3f2ae1;
-    color: #fff;
+    background: var(--primary);
+    color: var(--surface);
     border-radius: 999px;
     padding: 0.5rem 1rem;
     font-size: 0.875rem;
@@ -67,7 +67,7 @@
   
   .project-links a {
     margin-right: 2rem;
-    color: #3f2ae1;
+    color: var(--primary);
     text-decoration: none;
     font-weight: 500;
   }

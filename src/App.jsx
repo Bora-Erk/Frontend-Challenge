@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 
 import './App.css'
 import Header from './components/Header';
@@ -11,20 +11,28 @@ import '@fortawesome/fontawesome-free/css/all.min.css';
 
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [theme, setTheme] = useState(() => {
+    return localStorage.getItem('theme') || 'light';
+  });
+
+  useEffect(() => {
+    document.documentElement.setAttribute('data-theme', theme);
+    localStorage.setItem('theme', theme);
+  }, [theme]);
+
+  const toggleTheme = () => {
+    setTheme(prev => prev === 'light' ? 'dark' : 'light');
+  }
 
   return (
-    
-      <>
-      <LanguageProvider>
-        <Header/>
-        <Skills/>
-        <Profile/>
-        <Projects/>
-        <Footer/>
-        </LanguageProvider>
-      </>
-    
+    <LanguageProvider>
+      
+      <Header onToggleTheme={toggleTheme} currentTheme={theme} />
+      <Skills/>
+      <Profile/>
+      <Projects/>
+      <Footer/>
+    </LanguageProvider>
   )
 }
 
