@@ -38,12 +38,12 @@ const translations = {
   projectsTitle: { tr: 'Projeler', en: 'Projects' },
 
   areYouBored: {
-    tr: 'TRLorem ipsum dolor sit amet consectetur adipisicing elit.',
-    en: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.'
+    tr: 'Basit, özelleştirilebilir ve minimal kurulumlu bu çerez eklentisi, kullanıcılarınızın hangi çerezleri kabul edip etmeyeceklerini seçmelerine olanak tanır. Vanilla JS, SCSS ve Parcel Bundler ile oluşturulmuş olup bir NPM paketi olarak mevcuttur; Git deposu ise kod ve temalar üzerinde her türlü özelleştirmeye imkân tanır.',
+    en: 'A simple customizable, minimal setup cookie plugin that allows your users to select which cookies to accept or decline. This was created with vanilla JS, SCSS and Parcel Bundler and is available as a NPM package and the git repository makes any type of customization to code and themes possible.'
   },
   randomJokes: {
-    tr: 'TRLorem ipsum dolor sit amet consectetur adipisicing elit.',
-    en: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.'
+    tr: 'Basit, özelleştirilebilir ve minimal kurulumlu bu çerez eklentisi, kullanıcılarınızın hangi çerezleri kabul edip etmeyeceklerini seçmelerine olanak tanır. Vanilla JS, SCSS ve Parcel Bundler ile oluşturulmuş olup bir NPM paketi olarak mevcuttur; Git deposu ise kod ve temalar üzerinde her türlü özelleştirmeye imkân tanır.',
+    en: 'A simple customizable, minimal setup cookie plugin that allows your users to select which cookies to accept or decline. This was created with vanilla JS, SCSS and Parcel Bundler and is available as a NPM package and the git repository makes any type of customization to code and themes possible.'
   },
 
   footerPhrase: {
