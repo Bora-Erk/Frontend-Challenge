@@ -1,21 +1,50 @@
-.skills-grid{
+
+
+.skills {
     display: flex;
-}
-#js{
-    width: 70px;
-}
-#react{
-    width: 70px;
-}
-#redux{
-    width: 70px;
-}
-#node{
-    width: 70px;
-}
-#vs{
-    width: 70px;
-}
-#figma{
-    width: 50px;
-}
+    align-items: center;      
+    gap: 4rem;                
+    padding: 4rem 2rem;
+    margin-left: 18rem;
+  }
+  
+  .skills h2 {
+    font-size: 2.5rem;
+    align-self: flex-start;
+    color: #3f2ae1;      
+    margin-top: 1rem;
+    margin: 0;
+  }
+  
+  .skills-grid {
+    display: grid;
+    grid-template-rows: repeat(3, auto);
+    grid-template-columns: auto auto;
+    grid-auto-flow: column;
+    gap: 2.5rem 6rem;
+    
+  }
+  
+  .skills-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  .skills-item img {
+    width: 80px;
+    height: 80px;
+    padding: 0.75rem;
+    background: transparent;
+    border-radius: 1rem;
+    object-fit: contain;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  .skills-item span {
+    font-size: 1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #555
+  }
+  

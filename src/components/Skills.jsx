@@ -6,7 +6,6 @@ import reduxLogo from '../assets/reduxLogo.png';
 import nodeLogo from '../assets/nodeLogo.png';
 import vsLogo from '../assets/vsLogo.png';
 import figmaLogo from '../assets/figmaLogo.png';
-import { useLanguage } from '../context/LanguageContext.jsx';
 
 const skills = [
   { name: 'js', icon: jsLogo },
