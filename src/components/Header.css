@@ -1,0 +1,101 @@
+#almila {
+    width: 300px;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+}
+.header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    min-height: 75vh;
+    background: linear-gradient(
+      to right,
+      #3f2ae1 67%,
+      #d4f69b 33%
+    );
+    position: relative;
+    overflow: hidden;
+  }
+  
+  /* 2) Üst sağ kontroller */
+  .header-controls {
+    position: absolute;
+    top: 1.5rem;
+    right: 16rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    z-index: 10;
+  }
+  .lang-switch {
+    background: rgba(255,255,255,0.2); 
+    border: none; 
+    color: #3f2ae1;                     
+    border-radius: 0.25rem;
+    padding: 0.4rem 0.8rem;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    cursor: pointer;
+  }
+  
+  /* 3) Soldaki tanıtım bloğu */
+  .header-intro {
+    color: #d4f69b;
+    padding: 0 10%;
+    align-self: start;
+    margin-left: 2rem;
+  }
+  .header-intro p:first-child {
+    text-transform: lowercase; 
+    font-size: 1.5rem;
+    margin-bottom: 6rem;
+  }
+  .header-intro h2 {
+    font-size: 2rem;
+    line-height: 1.2;
+    margin: 0.25rem 0 1rem;
+    font-weight: 700;
+    color: #d4f69b;
+  }
+  #intro-part-2 {
+    color: #fff;
+    font-size: 1.125rem;
+    margin-bottom: 2rem;
+  }
+  
+  .header-social{
+    gap: 1rem
+  }
+  .header-social a {
+    display: inline-flex;
+    align-items: center;
+    gap: 1rem;
+    background: #fff;
+    color: #3f2ae1;
+    border-radius: 0.5rem;
+    padding: 0.50rem 1rem;
+    font-weight: 500;
+    text-decoration: none;
+    margin-right: 1rem;
+    transition: background .2s;
+  }
+  .header-social a:hover {
+    background: rgba(255,255,255,0.8);
+  }
+  
+  /* 5) Sağdaki görsel */
+  .header-image {
+    align-self: center;;
+    padding: 0 10%;
+    position: relative;
+    z-index: 1;
+  }
+  .header-image img {
+    display: block;
+    width: 380px; 
+    height: auto;
+    border-radius: 1.5rem;
+    box-shadow: 0 12px 24px rgba(0,0,0,0.2);
+    object-fit: cover;
+  }
+  

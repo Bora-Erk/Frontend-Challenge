@@ -1,14 +1,14 @@
 import React, { createContext, useContext, useState } from 'react';
 
 const translations = {
-  greeting: { tr: 'Hi! 👋', en: 'Hi! 👋' },
+  greeting: { tr: 'almila', en: 'almila' },
   introPart1: {
-    tr: 'Ben Almila. Full-stack geliştiriciyim.',
-    en: "I'm Almila, a full-stack developer."
+    tr: 'Ben bir Frontend geliştiriciyim...',
+    en: "I'm a Frontend Developer..."
   },
   introPart2: {
-    tr: 'Sağlam ve ölçeklenebilir frontend ürünler oluşturabilirim.',
-    en: 'I can craft solid and scalable frontend products.'
+    tr: 'Sağlam ve ölçeklenebilir frontend ürünleri harika kullanıcı deneyimiyle oluşturmayı seven bir geliştirciyim',
+    en: '...who likes to craft solid and scalable frontend products with great user experiences.'
   },
   meet: { tr: 'Tanışalım!', en: "Let's meet!" },
   currently: { tr: 'Şu anda', en: 'Currently' },

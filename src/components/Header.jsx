@@ -1,38 +1,38 @@
 import React from 'react';
 import { useLanguage } from '../context/LanguageContext.jsx';
 import './Header.css';
+import '@fortawesome/fontawesome-free/css/all.min.css';
+
 
 const Header = () => {
   const { t, toggleLanguage, lang } = useLanguage();
   return (
     <header className="header">
-      <div className="header__controls">
-        {/* Dil Değiştir Butonu */}
+      <div className="header-controls">
         <button className="lang-switch" onClick={toggleLanguage}>
           {t('switchLanguage')}
         </button>
       </div>
-      <div className="header__intro">
+      <div className="header-intro">
         <p>{t('greeting')}</p>        
         <h2>
-          {t('introPart1')}<br />
-          {t('introPart2')}<br />
-          {t('meet')}
+          {t('introPart1')}
         </h2>
-        <div className="header__social">
-          <a href="#"><i className="fab fa-linkedin"></i></a>
-          <a href="#"><i className="fab fa-github"></i></a>
-        </div>
-        <p className="header__work">
-          {t('currently')} <span>{t('freelancing')}</span><br />
-          {t('invite')} <a href="mailto:pratamaisoi@gmail.com">pratamaisoi@gmail.com</a>
+        <p id='intro-part-2'>
+          {t('introPart2')}<br />
         </p>
+        <div className="header-social">
+        <a href="#"><i className="fab fa-github"></i>GitHub</a>
+          <a href="#"><i className="fab fa-linkedin"></i>LinkedIn</a>
+          
+        </div>
+        
       </div>
 
       
 
-      <div className="header__image">
-        <img src="/assets/almila.jpg" alt="Almila" />
+      <div className="header-image">
+        <img id='almila' src="src/assets/foto.png" alt="Almila" />
       </div>
     </header>
   );
