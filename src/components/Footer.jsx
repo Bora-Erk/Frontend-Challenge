@@ -7,11 +7,14 @@ const Footer = () => {
   return (
     <footer className="footer">
       <p>{t('footerPhrase')}</p>
+      <p>{t('footerPhrase2')}</p>
+      <a href="#">almilasucode@gmail.com</a>
       <nav className="footer__nav">
-        <a href="#">{t('navGithub')}</a>
-        <a href="#">{t('navBlog')}</a>
-        <a href="#">{t('navLinkedin')}</a>
-        <a href="#">{t('navEmail')}</a>
+        <a href="#"><i className="fab fa-twitter"></i></a>
+        <a href="#"><i className="fab fa-instagram"></i></a>
+        <a href="#"><i className="fas fa-blog"></i></a>
+        <a href="#"><i className="fas fa-envelope"></i>
+        </a>
       </nav>
     </footer>
   );

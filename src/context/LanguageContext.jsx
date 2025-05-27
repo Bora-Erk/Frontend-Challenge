@@ -7,7 +7,7 @@ const translations = {
     en: "I'm a Frontend Developer..."
   },
   introPart2: {
-    tr: 'Sağlam ve ölçeklenebilir frontend ürünleri harika kullanıcı deneyimiyle oluşturmayı seven bir geliştirciyim',
+    tr: 'Harika kullanıcı deneyimleri sunan, sağlam ve ölçeklenebilir frontend ürünler geliştirmeyi seven bir Frontend Geliştiricisiyim.',
     en: '...who likes to craft solid and scalable frontend products with great user experiences.'
   },
   meet: { tr: 'Tanışalım!', en: "Let's meet!" },
@@ -47,8 +47,12 @@ const translations = {
   },
 
   footerPhrase: {
-    tr: 'Bir sonraki ürününüzde birlikte çalışalım.',
-    en: "Let's work together on your next product."
+    tr: 'Benimle iletişime geçin!',
+    en: "Send me a message!"
+  },
+  footerPhrase2: {
+    tr: 'Bir sorunuz veya öneriniz mi var ya da sadece merhaba demek mi istiyorsunuz? Buyurun!',
+    en: 'Gor a question or proposal, or just want to say hello? Go ahead.'
   },
   navGithub: { tr: 'GitHub', en: 'GitHub' },
   navBlog: { tr: 'Kişisel Blog', en: 'Personal Blog' },
