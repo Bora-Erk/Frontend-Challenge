@@ -8,7 +8,7 @@ import Projects from './components/Projects';
 import Footer from './components/Footer';
 import { LanguageProvider } from './context/LanguageContext.jsx';
 import '@fortawesome/fontawesome-free/css/all.min.css';
-
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
   const [theme, setTheme] = useState(() => {
@@ -26,7 +26,6 @@ function App() {
 
   return (
     <LanguageProvider>
-      
       <Header onToggleTheme={toggleTheme} currentTheme={theme} />
       <Skills/>
       <Profile/>

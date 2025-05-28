@@ -27,14 +27,15 @@ body {
     z-index: 10;
   }
   .lang-switch {
-    background: rgba(255,255,255,0.2); 
+    background:transparent; 
     border: none; 
-    color: #3f2ae1;                     
+    color: var(--primary);                     
     border-radius: 0.25rem;
     padding: 0.4rem 0.8rem;
     font-size: 0.85rem;
     text-transform: uppercase;
     cursor: pointer;
+    margin-right: 0.85rem;
   }
   
   .header-intro {
@@ -96,13 +97,22 @@ body {
     object-fit: cover;
   }
   .theme-switch {
-    background: rgba(255,255,255,0.2);
-    border: none;
-    color: var(--primary);
-    border-radius: 0.25rem;
+    background: transparent;
     padding: 0.4rem 0.8rem;
-    font-size: 0.85rem;
-    text-transform: uppercase;
+    font-size: 1rem;
     cursor: pointer;
+  }
+  .theme-label {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 0.85rem;
+    color: var(--secondary);
+    margin-right: 0.5rem;
+  }
+
+  .theme-switch.from-check-input{
+    background-color: var(--primary);
+    --webkit-appearance: none;
+    appearance: none;
   }
   

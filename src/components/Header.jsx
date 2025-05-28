@@ -2,6 +2,7 @@ import React from 'react';
 import { useLanguage } from '../context/LanguageContext.jsx';
 import './Header.css';
 import '@fortawesome/fontawesome-free/css/all.min.css';
+import { Form, FormGroup, Label, Input } from 'reactstrap';
 
 
 const Header = ({ onToggleTheme, currentTheme }) => {
@@ -9,12 +10,13 @@ const Header = ({ onToggleTheme, currentTheme }) => {
   return (
     <header className="header">
       <div className="header-controls">
-      <button
-          className="theme-switch"
-          onClick={onToggleTheme}
-        >
-          {currentTheme === 'light' ? 'Dark Mode' : 'Light Mode'}
-        </button>
+      <Form>
+        <FormGroup switch>
+          <Input className="theme-switch"
+          onClick={onToggleTheme} type="switch" role="switch" />
+          <Label className='theme-label' check>{currentTheme === 'light' ? 'DARK MODE' : 'LIGHT MODE'}</Label>
+        </FormGroup>
+      </Form>
         <button className="lang-switch" onClick={toggleLanguage}>
           {t('switchLanguage')}
         </button>
