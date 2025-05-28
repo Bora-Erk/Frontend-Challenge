@@ -116,4 +116,53 @@ body {
     --webkit-appearance: none;
     appearance: none;
   }
-  
+@media (max-width: 768px) {
+  .header {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 1rem 0;
+    background: var(--primary);       
+  }
+
+  .header-controls {
+    position: static;      
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+    right: auto; top: auto;
+  }
+
+  .header-intro {
+    margin: 0;
+    padding: 0 1rem;
+    text-align: center;
+  }
+  .header-intro p:first-child {
+    margin-bottom: 1rem;
+  }
+
+  .header-social {
+    justify-content: center;
+    margin-top: 0.5rem;
+  }
+  .lang-switch {
+    color: var(--secondary)
+  }
+
+  /* 5. Resim kapsayıcısını ortala ve padding’i kaldır */
+  .header-image {
+    margin: 1rem auto 0;
+    padding: 0 1rem;
+    text-align: center;
+  }
+
+  /* 6. Resim boyutunu küçült */
+  #almila {
+    width: 180px;          /* istersen 150–200 arası deneyebilirsin */
+  }
+  .header-image img {
+    width: 100%;
+    max-width: 250px;      /* üst sınır ver */
+    height: auto;
+  }
+}
