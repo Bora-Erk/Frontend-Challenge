@@ -20,7 +20,7 @@ body {
   .header-controls {
     position: absolute;
     top: 1.5rem;
-    right: 16rem;
+    right: 29rem;
     display: flex;
     align-items: center;
     gap: 1rem;
@@ -42,12 +42,13 @@ body {
     color: var(--secondary);
     padding: 0 10%;
     align-self: start;
-    margin-left: 2rem;
+    margin-left: 14rem;
+    margin-top: 1rem;
   }
   .header-intro p:first-child {
     text-transform: lowercase; 
     font-size: 1.5rem;
-    margin-bottom: 6rem;
+    margin-bottom: 14rem;
   }
   .header-intro h2 {
     font-size: 2rem;
@@ -86,7 +87,7 @@ body {
     align-self: center;;
     padding: 0 10%;
     position: relative;
-    z-index: 1;
+    margin-left: 5rem;
   }
   .header-image img {
     display: block;
