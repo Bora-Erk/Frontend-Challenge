@@ -149,20 +149,18 @@ body {
     color: var(--secondary)
   }
 
-  /* 5. Resim kapsayıcısını ortala ve padding’i kaldır */
   .header-image {
     margin: 1rem auto 0;
     padding: 0 1rem;
     text-align: center;
   }
 
-  /* 6. Resim boyutunu küçült */
   #almila {
-    width: 180px;          /* istersen 150–200 arası deneyebilirsin */
+    width: 180px;          
   }
   .header-image img {
     width: 100%;
-    max-width: 250px;      /* üst sınır ver */
+    max-width: 250px;      
     height: auto;
   }
 }
