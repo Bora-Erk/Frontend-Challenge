@@ -76,3 +76,63 @@
     text-decoration: underline;
   }
   
+@media (max-width: 768px) {
+  .projects {
+    padding: 2rem 1rem;          
+  }
+
+  .projects h2 {
+    margin: 0 0 2rem;            
+    text-align: center;          
+    font-size: 2rem;             
+  }
+
+  .projects-grid {
+    display: grid;
+    grid-template-columns: 1fr;  
+    row-gap: 2rem;                
+    max-width: 100%;             
+    margin: 0 auto;
+  }
+
+  .project {
+    display: grid;
+    grid-template-columns: 1fr;   
+    row-gap: 1rem;                
+  }
+
+  .project img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+
+  .project-info {
+    padding: 1.5rem 1rem;         
+    text-align: center;           
+  }
+
+  .project-info h3 {
+    font-size: 1.5rem;
+  }
+
+  .project-info p {
+    margin-bottom: 1rem;
+    line-height: 1.4;
+  }
+
+  .project-tags {
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+
+  .project-tags span {
+    margin: 0 0.25rem 0.5rem;
+  }
+
+  .project-links {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+  }
+}
